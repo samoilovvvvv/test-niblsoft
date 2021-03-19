@@ -26,8 +26,9 @@ const NodeList = props => {
 
 const mapStateToProps = state => {
   return {
-    note: state.note
+    note: state.note,
+    state
   }
 }
 
-export default connect(mapStateToProps)(NodeList)
+export default connect(mapStateToProps, null)(NodeList)
