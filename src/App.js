@@ -1,6 +1,8 @@
+import MainPage from './containers/MainPage/MainPage'
+
 function App() {
   return (
-    <div>Hello world</div>
+    <MainPage/>
   );
 }
 
