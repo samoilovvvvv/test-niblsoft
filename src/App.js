@@ -1,8 +1,13 @@
 import MainPage from './containers/MainPage/MainPage'
+import CreationMenu from './components/CreationMenu/CreationMenu'
+import {Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <MainPage/>
+    <Switch>
+      <Route path={'/creating-note'} component={CreationMenu}/>
+      <Route path={'/'} exact={true} component={MainPage}/>
+    </Switch>
   );
 }
 

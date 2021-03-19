@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import NodeList from '../../components/NodeList/NodeList'
 import Button from '../../components/UI/Button/Button'
 import CreationMenu from '../../components/CreationMenu/CreationMenu'
+import {withRouter} from 'react-router-dom'
 import './MainPage.scss'
 
 const MainPage = props => {
@@ -9,6 +10,9 @@ const MainPage = props => {
   
   const buttonClickHandler = () => {
     setCreationFlag(!creationMenu)
+    props.history.push({
+      pathname: '/creating-note'
+    })
   }
   
   return (
@@ -38,4 +42,4 @@ const MainPage = props => {
   )
 }
 
-export default MainPage
+export default MainPageexport default withRouter(MainPage)
