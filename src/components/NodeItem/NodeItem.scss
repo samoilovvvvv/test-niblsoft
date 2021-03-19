@@ -1,0 +1,34 @@
+.NodeItem {
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+  border-top: 1px solid #9C9C9C;
+  border-left: 1px solid #9C9C9C;
+  border-right: 1px solid #9C9C9C;
+  list-style: none;
+
+  h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      padding: 0px 5px;
+      background: #BBBBBB;
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  i {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    font-size: 1.4rem;
+  }
+}
