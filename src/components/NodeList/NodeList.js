@@ -10,6 +10,7 @@ const NodeList = props => {
       return (
         <NodeItem
           key={item.id.toString()}
+          id={item.id}
           name={item.name}
           tags={item.tags}
         />

@@ -1,5 +1,5 @@
 import MainPage from './containers/MainPage/MainPage'
-import CreationMenu from './components/CreationMenu/CreationMenu'
+import CreationMenu from './containers/CreationMenu/CreationMenu'
 import {Switch, Route} from 'react-router-dom'
 
 function App() {
