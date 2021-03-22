@@ -17,15 +17,31 @@
 
   form {
     width: 100%;
-  }
 
-  textarea {
-    outline: none;
-    border: none;
-    resize: none;
-    width: 100%;
-    height: 200px;
-    box-sizing: border-box;
+    .Input {
+      margin-top: 15px;
+    }
+
+    .Input:first-child {
+      margin: 0;
+
+      input {
+        margin-bottom : 0;
+      }
+    }
+
+    textarea {
+      outline: none;
+      border: none;
+      resize: none;
+      width: 100%;
+      height: 200px;
+      box-sizing: border-box;
+    }
+
+    small {
+      color: #ff0000;
+    }
   }
 
   button {
