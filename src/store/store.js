@@ -87,8 +87,19 @@ export const deleteNote = id => {
 export const deleteTag = (id, tag) => {
   return async dispatch => {
     try {
-      note.note[id - 1].tags = note.note[id - 1].tags.filter(item => {
+      const processedNote = note.note.find(item => {
+        return item.id === Number(id)
+      })
+      
+      processedNote.tags = processedNote.tags.filter(item => {
         return item !== tag.trim()
+      })
+ 
+      note.note = note.note.filter(item => {
+        if (item.id === id) {
+          return processedNote
+        }
+        return item
       })
   
       dispatch({
