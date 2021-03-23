@@ -13,6 +13,7 @@ const NodeList = props => {
           id={item.id}
           name={item.name}
           tags={item.tags}
+          onDoubleClick={props.onDoubleClick}
         />
       )
     })

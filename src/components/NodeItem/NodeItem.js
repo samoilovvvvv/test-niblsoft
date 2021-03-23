@@ -4,7 +4,6 @@ import {connect} from 'react-redux'
 import {deleteNote, deleteTag} from '../../store/store'
 
 const NodeItem = props => {
-  
   const renderTags = () => {
     return props.tags.map(item => {
       return (
@@ -25,7 +24,7 @@ const NodeItem = props => {
   }
   
   return (
-    <li id={props.id} className={'NodeItem'}>
+    <li id={props.id} className={'NodeItem'} onDoubleClick={props.onDoubleClick}>
       <h3>{props.name}</h3>
       <div>{renderTags()}</div>
       <i onClick={onClickNoteDeleteHandler} className={'fa fa-times li'}></i>
