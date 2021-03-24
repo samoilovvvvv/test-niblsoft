@@ -166,11 +166,7 @@ const ViewingNote = props => {
       })
     }
     
-    const filterTags = tags.filter(item => {
-      if (item !== '') {
-        return item.trim()
-      }
-    })
+    const filterTags = tags.filter(item => item.trim() !== '')
     
     const tagsSet = new Set(filterTags)
     

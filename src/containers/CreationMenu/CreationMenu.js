@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState} from 'react'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import {connect} from 'react-redux'
@@ -45,11 +45,7 @@ const CreationMenu = props => {
     })
 
     
-    const filterTags = tags.filter(item => {
-      if (item !== '') {
-        return item.trim()
-      }
-    })
+    const filterTags = tags.filter(item => item.trim() !== '')
 
     const tagsSet = new Set(filterTags)
     
