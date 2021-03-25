@@ -83,11 +83,7 @@ export const addNote = (name, tags, text) => {
 export const deleteNote = id => {
   return async dispatch => {
     try {
-      note.note = note.note.filter(item => {
-        if (item.id !== Number(id)) {
-          return item
-        }
-      })
+      note.note = note.note.filter(item => item.id !== Number(id))
   
       dispatch({
         type: DELETE_NOTE,
